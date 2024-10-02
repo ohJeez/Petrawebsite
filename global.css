@@ -2,7 +2,14 @@ body {
   font-family: 'Fredoka', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #d3f2f2 0%, #ffffff 100%);
+  background-color: #F9F9F9;
+}
+
+.product-grid h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 36px;
+  color: #124C5F;
+  margin-bottom: 50px;
 }
 
 /* Product Grid Section*/
@@ -11,6 +18,7 @@ body {
   height: auto;
   width: auto;
   box-shadow: 0 11px 7px rgba(0, 0, 0, 0);
+  text-align: center;
 }
 
 .product-row {
@@ -101,4 +109,70 @@ body {
   .product-image {
     max-width: 100%;
   }
+}
+
+
+/* Footer Section */
+footer {
+  background-color: #124C5F;
+  color: white;
+  padding: 40px 0;
+  margin-top: 50px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+  text-align: left;
+}
+
+.footer-container div {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #E8F8F9;
+}
+
+.footer-about p, .footer-contact ul li, .footer-links ul li a {
+  font-size: 16px;
+  color: #F9F9F9;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #E8F8F9;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #2EB3C7;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0D8A8F;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #E8F8F9;
 }

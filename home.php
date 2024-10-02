@@ -12,7 +12,7 @@ include 'common-functions/functions.php';
     <title>Petra</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./home.css" />
+    <!-- <link rel="stylesheet" href="./home.css" /> -->
 
     <link rel="stylesheet" href="./global.css" />
     <link
@@ -23,9 +23,9 @@ include 'common-functions/functions.php';
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400&display=swap"
     />
-
+    
     <!-- Custom Styling -->
-    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="header.css" />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -65,22 +65,89 @@ include 'common-functions/functions.php';
             <img src="./images/header.png" alt="Cover image"/>
         </div>
     </section>    
+    <!-- Services -->
+    <div class="services-provided">
+        <h2>Services Provided</h2>
+        <div class="service-card-container">
+            <div class="card">
+                <div class="card-content">
+                    <img src="./images/Sections/Grooming.png" alt="Grooming Icon">
+                    <h3>Grooming</h3>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <img src="./images/Sections/daycare.png" alt="Daycare Icon">
+                    <h3>Daycare</h3>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <img src="./images/Sections/healthcare.png" alt="Healthcare Icon">
+                    <h3>Healthcare</h3>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <img src="./images/Sections/hyginic care.png" alt="Hygienic Care Icon">
+                    <h3>Hygienic Care</h3>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-content">
+                    <img src="./images/Sections/Training.png" alt="Training Icon">
+                    <h3>Training      </h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- New Pets Section -->
     <section class="product-grid">
-    <h1><b class="section-head">New Pets</b></h1><br>
+      <h2>New Pets</h2>
       <div class="product-row">
         <?php
-        // Display the products dynamically
-        getProducts();
+          // Display the products dynamically
+          getProducts();
         ?>
       </div>
     </section>
-    <section>
-      <div>
-        
-      </div>
-    </section>
+
+    <!-- Footer -->
+    <footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Petra</h3>
+      <p>Petra is your trusted partner for all things pets. From pet grooming to healthcare and products, we ensure your pets receive the best care.</p>
+    </div>
+    
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Email: support@petra.com</li>
+        <li>Phone: +123 456 7890</li>
+        <li>Location: 1234 Pet Street, Pet City</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Petra. All rights reserved.</p>
+  </div>
+</footer>
     <!-- JavaScript for Event Handling -->
     <script>
       const links = [
