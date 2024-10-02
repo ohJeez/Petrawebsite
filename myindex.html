@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petra</title>
+    <style>
+        /* Reset margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set the body and html to take up full height */
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Remove scrollbars */
+            font-family: Arial, sans-serif;
+        }
+
+        /* General iframe styling */
+        iframe {
+            border: none;
+            display: block;
+        }
+
+        /* Proportions of the header, body, and footer */
+        #header-frame {
+            width: 100%;
+            height: 15%; /* Adjust height of the header */
+        }
+
+        #body-frame {
+            width: 100%;
+            height: 90%; /* Main content takes the majority of the space */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            #header-frame, #body-frame, #footer-frame {
+                height: auto; /* Adjust to fit screen size */
+            }
+        }
+
+        /* Ensure seamless transitions between sections */
+        iframe {
+            transition: height 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <iframe id="header-frame" src="header.html"></iframe>
+
+    <!-- Main Body Section -->
+    <iframe id="body-frame" src="home.php"></iframe>
+
+</body>
+</html>
